@@ -1,0 +1,20 @@
+material_analysis_task:
+  description: >
+    Analyze existing lesson materials, including templates, slides, spreadsheets, and documentation for {topic}.
+    Identify key instructional patterns, learning objectives, teaching strategies, and any reusable frameworks.
+    Summarize insights that could inform new course creation or lesson design.
+  expected_output: >
+    A structured summary of key instructional elements extracted from the provided materials, organized by theme or strategy.
+    Include specific references or examples from the materials.
+  agent: curriculum_analyst
+
+outline_generation_task:
+  description: >
+    Based on a high-level design document for a {topic} course, conduct in-depth research to fill in the knowledge gaps.
+    Use trusted sources and current information (as of {current_year}) to understand the topic deeply.
+    Then, create a content-rich outline of the course, including recommended lesson flow, subtopics, and content notes.
+  expected_output: >
+    A detailed document outline for the {topic} course, broken into lesson-level sections with bullet points of what should be covered.
+    Include any references or sources used for the research.
+  agent: learning_researcher
+
